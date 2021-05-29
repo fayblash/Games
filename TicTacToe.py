@@ -5,7 +5,7 @@ board = {7: ' ' , 8: ' ' , 9: ' ' ,
             1: ' ' , 2: ' ' , 3: ' ' }
 
 
-//setting up the board
+#setting up the board
 def displayBoard(board):
     print(board[7] + '|' + board[8] + '|' + board[9])
     print('-----')
@@ -13,7 +13,7 @@ def displayBoard(board):
     print('-----')
     print(board[1] + '|' + board[2] + '|' + board[3])
 
-//play game, user vs computer
+#play game, user vs computer
 def play_game():
     userinput="Q"    
     while userinput =="Q":
@@ -33,7 +33,7 @@ def play_game():
     for i in range(9):
         displayBoard(board)
         
-        //users turn
+        #users turn
         if i%2==0:
             print(f"It's your turn. Choose a space to put your {player}")
 
@@ -48,7 +48,7 @@ def play_game():
                 
                 else:
                     print(f"That place is already filled.\nChoose a different space to put your {player}")
-        //computers turn        
+        #computers turn        
         else:
             flag = True
             while flag:
@@ -61,7 +61,7 @@ def play_game():
                     print(f"The computer put an {comp} in space {comp_move}")
                     flag=False 
                  
-        //results
+        #results
         if board[7] == board[8] == board[9] != ' ': 
             displayBoard(board)
             print(f"Game Over. {board[7]} won.")                               
