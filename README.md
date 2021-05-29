@@ -1,5 +1,5 @@
 # Games
 
-Here are a bunch of games I created as I was learning how to code.
+Here are a bunch of games I had fun creating as I was learning Python.
 
 Enjoy!!
