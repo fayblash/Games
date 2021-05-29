@@ -1,4 +1,4 @@
-//class and methods for RockPaperScissors
+#class and methods for RockPaperScissors
 class Game():
     def __init__(self):
         self.results={"You Won":0,"You Lost":0,"You Tied":0}
